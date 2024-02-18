@@ -9,6 +9,7 @@ return {
                 "lua",
                 "javascript",
                 "typescript",
+                "python",
                 "go",
                 "sql",
                 "make",
