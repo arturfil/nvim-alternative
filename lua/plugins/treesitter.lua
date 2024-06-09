@@ -16,6 +16,7 @@ return {
                 "dockerfile",
                 "yaml",
                 "graphql",
+                "terraform",
                 "proto",
                 "html",
             },
