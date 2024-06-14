@@ -12,30 +12,97 @@ return
 -- }
 
 -- {
---       'projekt0n/github-nvim-theme',
---       lazy = false, -- make sure we load this during startup if it is your main colorscheme
---       priority = 1000, -- make sure to load this before all the other start plugins
---       config = function()
---                 vim.cmd.colorscheme "github_dark_default"
---       end,
+--     "folke/tokyonight.nvim",
+--         priority = 1000,
+--         config = function()
+--             vim.cmd("colorscheme tokyonight")
+-- 
+--             require("tokyonight").setup({
+--                 style = "night"
+--             })
+--         end
+-- }
+
+ {
+         "catppuccin/nvim",
+         name = "catppuccin",
+         lazy = false,
+         priority = 1000,
+         config = function()
+             require("catppuccin").setup({
+                 color_overrides = {
+                     mocha = {
+                            -- base = "#181825", -- very dark purple
+                            -- mantle = "#181825"
+                            -- base = "#1e1e2e", -- light dark purple
+                            -- mantle = "#1e1e2e"
+                          base = "#1e2021", -- gray black 
+                          mantle = "#1e2021"
+                     }
+                 }
+             })
+             vim.cmd.colorscheme "catppuccin"
+         end
+}
+
+-- {
+--     "ellisonleao/gruvbox.nvim",
+--     lazy = false,
+--     priority = 1000,
+--     config = function()
+--         require("gruvbox").setup({
+--             contrast = "hard",
+--             -- contrast = "dark",
+--             overrides = {
+--                 SignColumn = {bg = "#1e2021"},
+--                 guifg= {bg = "#1e2021"}
+--             },
+--             palette_overrides = {
+--                 gray = "#2ea542",
+--                 dark0_hard = "#1e2021"
+--             }
+--         })
+-- 
+--         vim.cmd.colorscheme "gruvbox"
+--     end
 -- }
 
 -- {
---         "catppuccin/nvim",
---         name = "catppuccin",
---         lazy = false,
---         priority = 1000,
---         config = function()
---             require("catppuccin").setup({
---                 color_overrides = {
---                     mocha = {
---                         base = "#1e2021",
---                         mantle = "#1e2021"
+--     "rebelot/kanagawa.nvim",
+--     config = function ()
+--         require('kanagawa').setup({
+--             colors = {
+--                 palette = {
+--                     -- change all usages of these colors
+--                     sumiInk0 = "#000000",
+--                     fujiWhite = "#FFFFFF",
+--                 },
+--                 theme = {
+--                     -- change specific usages for a certain theme, or for all of them
+--                     wave = {
+--                         ui = {
+--                             float = {
+--                                 bg = "none",
+--                             },
+--                         },
+--                     },
+--                     dragon = {
+--                         syn = {
+--                             parameter = "yellow",
+--                         },
+--                     },
+--                     all = {
+--                         ui = {
+--                             bg_gutter = "none"
+--                         }
 --                     }
 --                 }
---             })
---             vim.cmd.colorscheme "catppuccin"
---         end
+--             },
+--         })
+-- 
+--         vim.cmd.colorscheme "kanagawa-wave"
+--     end
+-- 
 -- }
 
 -- {
@@ -89,27 +156,6 @@ return
 --     end
 -- }
 
-{
-    "ellisonleao/gruvbox.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require("gruvbox").setup({
-            contrast = "hard",
-            -- contrast = "dark",
-            overrides = {
-                SignColumn = {bg = "#1e2021"},
-                guifg= {bg = "#1e2021"}
-            },
-            palette_overrides = {
-                gray = "#2ea542",
-                dark0_hard = "#1e2021"
-            }
-        })
-
-        vim.cmd.colorscheme "gruvbox"
-    end
-}
 
 -- { 
 --   "sainnhe/everforest"
@@ -134,16 +180,4 @@ return
 --     end
 -- }
 
--- require("night-wolf").setup()
--- {
---     "folke/tokyonight.nvim",
---         priority = 1000,
---         config = function()
---             vim.cmd("colorscheme tokyonight")
--- 
---             require("tokyonight").setup({
---                 style = "night"
---             })
---         end
--- }
 

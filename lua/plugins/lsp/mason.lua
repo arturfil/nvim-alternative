@@ -37,6 +37,7 @@ return {
         "lua_ls",
         "graphql",
         "gopls",
+        "bufls",
         "emmet_ls",
         "prismals",
         "pyright",
