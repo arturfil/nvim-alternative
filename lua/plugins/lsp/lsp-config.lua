@@ -111,12 +111,23 @@ return {
         -- configure emmet language server
         lspconfig["emmet_ls"].setup({
           capabilities = capabilities,
-          filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+          filetypes = { "html", "templ", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+        })
+      end,
+      ["templ"] = function()
+        lspconfig["templ"].setup({
+            capabilities = capabilities
         })
       end,
       ["gopls"] = function()
         lspconfig["gopls"].setup({
             capabilities = capabilities
+        })
+      end,
+      ["html"] = function()
+        lspconfig["html"].setup({
+            capabilities = capabilities,
+            filetypes = {"html", "templ"}
         })
       end,
       ["lua_ls"] = function()

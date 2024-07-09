@@ -55,6 +55,7 @@ return {
         "black", -- python formatter
         "debugpy", -- python debugger
         "golines", -- go formatter
+        "templ",
         "pylint", -- python linter
         "eslint_d", -- js linter
       },

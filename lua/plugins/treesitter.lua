@@ -14,6 +14,7 @@ return {
                 "sql",
                 "make",
                 "dockerfile",
+                "templ",
                 "yaml",
                 "graphql",
                 "terraform",
