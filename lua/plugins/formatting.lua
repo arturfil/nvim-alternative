@@ -1,7 +1,7 @@
 return {
 	"stevearc/conform.nvim",
-	"jose-elias-alvarez/null-ls.nvim",
-	"jayp0521/mason-null-ls.nvim",
+	-- "jose-elias-alvarez/null-ls.nvim",
+	-- "jayp0521/mason-null-ls.nvim",
 
 	lazy = true,
 	event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
