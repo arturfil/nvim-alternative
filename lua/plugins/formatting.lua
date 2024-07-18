@@ -19,6 +19,7 @@ return {
 				html = { "prettier" },
 				json = { "prettier" },
 				golang = { "golines" },
+                sql = { "sql-formatter" },
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				graphql = { "prettier" },
